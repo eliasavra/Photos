@@ -24,7 +24,7 @@
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <img src="https://github.com/eliasavra/Photos/blob/main/IMG_5715.JPG?raw=true" style="width:100%">
-  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
@@ -47,7 +47,7 @@
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -56,7 +56,7 @@
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Elias Avramidis.</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span>Elias Avramidis.</h1>
     <p>Photographer and Cinematographer.</p>
       
     <!-- This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
@@ -142,8 +142,28 @@
   <div class="w3-padding-64 w3-content" id="portfolio">
     <h2 class="w3-text-light-grey">My Work</h2>
     <hr style="width:200px" class="w3-opacity">
-    <iframe src="https://player.vimeo.com/video/768082062?h=2d8a2eab83" style="width:100%; height:470px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    <iframe src="https://player.vimeo.com/video/768092785?h=2d8a2eab83" style="width:100%; height:470px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    
+
+    <!-- Portfolio on large screens (Hidden on small and medium screens) -->
+    <iframe class="w3-hide-medium w3-hide-small" src="https://player.vimeo.com/video/768082062?h=2d8a2eab83" style="width:100%; height:470px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <iframe class="w3-hide-medium w3-hide-small" src="https://player.vimeo.com/video/768092785?h=2d8a2eab83" style="width:100%; height:470px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    
+    <!-- Portfolio on medium screens (Hidden on small and large screens) -->
+    <div class="w3-row-padding" style="margin:0 -16px"> 
+      <div class="w3-col">
+        <iframe class="w3-hide-large w3-hide-small" src="https://player.vimeo.com/video/768082062?h=2d8a2eab83" style="width:100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe class="w3-hide-large w3-hide-small" src="https://player.vimeo.com/video/768092785?h=2d8a2eab83" style="width:100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <!-- Portfolio on small screens (Hidden on medium and large screens) -->
+    <div class="w3-row-padding" style="margin:0 -16px"> 
+      <div class="w3-col">
+        <iframe class="w3-hide-large w3-hide-medium" src="https://player.vimeo.com/video/768082062?h=2d8a2eab83" style="width:100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe class="w3-hide-large w3-hide-medium" src="https://player.vimeo.com/video/768092785?h=2d8a2eab83" style="width:100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+    
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
